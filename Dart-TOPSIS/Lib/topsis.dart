@@ -173,7 +173,7 @@ class Topsis {
     return _Row<num>([column.name, ...temp]);
   }
 
-  /// EXtrai uma coluna da tabela e retorna uma linha com valores numéricos
+  /// Extrai uma coluna da tabela e retorna uma linha com valores numéricos
   _Row<num> _extractColumn(List<_Row<num>> values, int column) {
     final temp =
         values.map<double>((row) => row.values[column].toDouble()).toList();
@@ -181,7 +181,7 @@ class Topsis {
     return _Row<num>([_headers.values[column], ...temp]);
   }
 
-  /// EXtrai uma coluna da tabela e retorna uma linha com valores numéricos
+  /// Extrai uma coluna da tabela e retorna uma linha com valores numéricos
   _Row<num> _extractRow(List<_Row<num>> values, int column) {
     final temp =
         values.map<double>((row) => row.values[column].toDouble()).toList();
